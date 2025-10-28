@@ -1,8 +1,31 @@
 // Note: Typed.js is now initialized in the view file for better control
 // Removed from here to prevent conflicts
 
+// Ensure BoxIcons fonts are loaded
+document.fonts.ready.then(function () {
+    console.log('Fonts loaded successfully');
+    // Force re-render of icons
+    const icons = document.querySelectorAll('.bx, [class*="bx-"], [class*="bxl-"]');
+    icons.forEach(icon => {
+        icon.style.fontFamily = 'boxicons';
+    });
+});
+
 // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
+    // Verify BoxIcons are loading
+    const iconTest = document.createElement('i');
+    iconTest.className = 'bx bx-check';
+    iconTest.style.position = 'absolute';
+    iconTest.style.left = '-9999px';
+    document.body.appendChild(iconTest);
+    
+    // Check if icon font is loaded
+    setTimeout(() => {
+        const computedStyle = window.getComputedStyle(iconTest);
+        console.log('BoxIcons font-family:', computedStyle.fontFamily);
+        document.body.removeChild(iconTest);
+    }, 100);
     // Mobile Menu Toggle - Enhanced implementation
     const menuIcon = document.querySelector("#menu-icon");
     const navbar = document.querySelector(".navbar");

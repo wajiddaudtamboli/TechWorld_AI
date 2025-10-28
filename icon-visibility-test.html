@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Visibility Test</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #081b29;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        h1 {
+            color: #ff8c00;
+        }
+
+        .test-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            min-width: 400px;
+        }
+
+        .social-icons {
+            display: flex !important;
+            align-items: center !important;
+            gap: 15px !important;
+            margin: 20px 0;
+            justify-content: center;
+        }
+
+        .social-icons a {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 45px !important;
+            height: 45px !important;
+            border-radius: 50% !important;
+            background: rgba(255, 140, 0, 0.1) !important;
+            border: 2px solid #ff8c00 !important;
+            transition: all 0.3s ease !important;
+            text-decoration: none !important;
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.3) !important;
+        }
+
+        .social-icons a:hover {
+            background: #ff8c00 !important;
+            transform: scale(1.15) translateY(-3px) !important;
+            box-shadow: 0 5px 20px rgba(0, 238, 255, 0.5) !important;
+        }
+
+        .social-icons a i {
+            font-size: 24px !important;
+            color: #ff8c00 !important;
+            transition: all 0.3s ease !important;
+            font-weight: 600 !important;
+        }
+
+        .social-icons a:hover i {
+            color: #081b29 !important;
+        }
+
+        /* Specific hover colors */
+        .social-icons a:hover[href*="github"] {
+            background: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .social-icons a:hover[href*="github"] i {
+            color: #181717;
+        }
+
+        .social-icons a:hover[href*="linkedin"] {
+            background: #0077b5;
+            border-color: #0077b5;
+        }
+
+        .social-icons a:hover[href*="linkedin"] i {
+            color: #ffffff;
+        }
+
+        .social-icons a:hover[href*="mailto"] {
+            background: #ea4335;
+            border-color: #ea4335;
+        }
+
+        .social-icons a:hover[href*="mailto"] i {
+            color: #ffffff;
+        }
+
+        .social-icons a:hover[href*="wa.me"] {
+            background: #25d366;
+            border-color: #25d366;
+        }
+
+        .social-icons a:hover[href*="wa.me"] i {
+            color: #ffffff;
+        }
+
+        .status {
+            background: #00ff00;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Icon Visibility Test</h1>
+    
+    <div class="test-section">
+        <h2 style="text-align: center; color: #0ef;">Social Media Icons</h2>
+        <div class="social-icons">
+            <a href="https://github.com/wajiddaudtamboli" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               title="GitHub">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/wajid-daud-tamboli-3217b031a" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               title="LinkedIn">
+                <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="mailto:wajiddaudtamboli123@gmail.com" 
+               title="Email">
+                <i class="bx bx-envelope"></i>
+            </a>
+            <a href="https://wa.me/919667033839" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               title="WhatsApp">
+                <i class="bx bxl-whatsapp"></i>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">
+            Hover over icons to see color changes!
+        </p>
+    </div>
+
+    <div class="status">
+        ✅ If you see 4 circular icons above, the fix is working!
+    </div>
+
+    <div style="text-align: center; margin-top: 20px; font-size: 14px; opacity: 0.8;">
+        <p>📋 Icon Details:</p>
+        <p>• Size: 45px x 45px</p>
+        <p>• Border: 2px solid orange</p>
+        <p>• Background: Semi-transparent orange glow</p>
+        <p>• Icon Size: 24px</p>
+    </div>
+</body>
+</html>

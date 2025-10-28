@@ -227,45 +227,6 @@ body {
   width: 100%;
 }
 
-#menu-icon {
-  font-size: 3.6rem;
-  color: var(--text-color);
-  cursor: pointer;
-  display: none;
-  transition: all 0.3s ease;
-  z-index: 1001;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  padding: 5px;
-  border: 2px solid transparent;
-}
-
-/* Ensure menu icon is completely hidden on desktop */
-@media (min-width: 992px) {
-  #menu-icon {
-    display: none !important;
-  }
-  
-  .navbar {
-    display: flex !important;
-    position: static !important;
-    flex-direction: row !important;
-    background: transparent !important;
-    width: auto !important;
-    height: auto !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    border: none !important;
-  }
-}
-
-#menu-icon:hover {
-  color: var(--main-color);
-  background: rgba(255, 140, 0, 0.1);
-  border-color: var(--main-color);
-  transform: scale(1.1);
-}
-
 /* Home Section */
 section {
   min-height: auto;
@@ -1400,110 +1361,9 @@ section {
   }
 }
 
-/* Tablet and Mobile Navbar Styles (under 992px) */
-@media (max-width: 991px) {
-  #menu-icon {
-    display: flex !important;
-    position: fixed;
-    top: 1.5rem;
-    right: 1.5rem;
-    left: auto;
-    z-index: 1001;
-    background: rgba(8, 27, 41, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
-    width: 55px;
-    height: 55px;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.2rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border: 2px solid var(--main-color);
-    transition: all 0.3s ease;
-  }
+/* Additional Mobile Enhancements - Removed mobile menu toggle */
 
-  #menu-icon:hover {
-    background: rgba(255, 140, 0, 0.2);
-    transform: scale(1.05);
-  }
-
-  #menu-icon.bx-x {
-    background: rgba(255, 0, 0, 0.1);
-    border-color: #ff4444;
-    color: #ff4444;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 80%;
-    max-width: 350px;
-    height: 100vh;
-    background: rgba(8, 27, 41, 0.98);
-    backdrop-filter: blur(15px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1.5rem;
-    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1000;
-    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
-    border-right: 3px solid var(--main-color);
-  }
-
-  .navbar.active {
-    left: 0;
-  }
-
-  .navbar a {
-    margin: 0.8rem 0;
-    padding: 1rem 1.5rem;
-    background: linear-gradient(45deg, var(--main-color), var(--hover-color));
-    color: var(--bg-color);
-    border-radius: 25px;
-    width: 100%;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .navbar a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
-  }
-
-  .navbar a:hover::before {
-    left: 100%;
-  }
-
-  .navbar a:hover,
-  .navbar a.active {
-    background: linear-gradient(45deg, var(--hover-color), #ffcc66);
-    transform: translateX(8px) scale(1.02);
-    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
-  }
-
-  /* Body lock when menu is open */
-  body.menu-open {
-    overflow: hidden;
-  }
-
-  /* Hide regular navbar on mobile */
-  .header .navbar:not(.active) {
-    display: none;
-  }
-}
+/* Responsive Design Adjustments */
 
 /* Additional Mobile Enhancements */
 @media (max-width: 991px) {

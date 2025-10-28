@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "npm run copy-files",
-    "copy-files": "node -e \"const fs = require('fs'); fs.mkdirSync('dist', {recursive: true}); fs.copyFileSync('index.html', 'dist/index.html'); fs.copyFileSync('manifest.json', 'dist/manifest.json');\"",
+    "copy-files": "node build-static.js",
     "dev": "serve . -l 3000",
     "start": "serve dist -l 3000",
     "preview": "npm run build && npm start"

@@ -33,6 +33,18 @@ if (fs.existsSync(wwwrootPath)) {
   copyDirectory(wwwrootPath, distDir);
 }
 
+// Copy index.html to dist
+const indexPath = path.join(__dirname, 'index.html');
+if (fs.existsSync(indexPath)) {
+  fs.copyFileSync(indexPath, path.join(distDir, 'index.html'));
+}
+
+// Copy manifest.json to dist
+const manifestPath = path.join(__dirname, 'manifest.json');
+if (fs.existsSync(manifestPath)) {
+  fs.copyFileSync(manifestPath, path.join(distDir, 'manifest.json'));
+}
+
 // Copy frontend-static content
 const frontendStaticPath = path.join(__dirname, 'PortfolioApp', 'frontend-static');
 if (fs.existsSync(frontendStaticPath)) {

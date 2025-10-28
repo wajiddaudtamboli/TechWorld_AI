@@ -53,9 +53,6 @@
         <i class="bx bx-menu" id="menu-icon" style="right: 1rem; left: auto"></i>
     </header>
 
-    <!-- Conditional render link container for dual deployment -->
-    <div id="render-link-container" style="padding-top: 80px;"></div>
-
     <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-content">
@@ -784,26 +781,6 @@
                     backDelay: 1000,
                     loop: true
                 });
-            }
-        });
-
-        // Show dynamic link for Vercel visitors
-        document.addEventListener('DOMContentLoaded', function() {
-            const dynamicUrl = "https://techworld-ai.onrender.com";
-            const hostname = window.location.hostname;
-            
-            if (hostname.includes('vercel.app') || hostname.includes('vercel.com')) {
-                const renderLinkContainer = document.getElementById('render-link-container');
-                if (renderLinkContainer) {
-                    renderLinkContainer.innerHTML = `
-                        <div style="text-align: center; margin: 20px 0; padding: 15px; background: rgba(255, 140, 0, 0.1); border-radius: 10px; border: 2px solid var(--main-color);">
-                            <p style="color: var(--text-color); margin-bottom: 10px;">🚀 Want the full dynamic experience with backend features?</p>
-                            <a href="${dynamicUrl}" target="_blank" style="color: var(--main-color); font-weight: 600; text-decoration: none;">
-                                Visit Dynamic Version on Render →
-                            </a>
-                        </div>
-                    `;
-                }
             }
         });
     </script>

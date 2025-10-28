@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Wajid Tamboli | Portfolio</title>
+
+    <!-- Meta description optimized for search engines -->
+    <meta name="description"
+        content="Wajid Tamboli - Professional portfolio showcasing skills in full-stack development, UI/UX design, and technical support. Expertise in React, Node.js, Python, Java, and cloud technologies." />
+
+    <!-- Meta Keywords for better search visibility -->
+    <meta name="keywords"
+        content="Wajid Tamboli, Portfolio, Full Stack Developer, Frontend Developer, Technical Support Engineer , UI/UX Designer, React, Angular, Node.js, MongoDB, Python, Java, Technical Writer, Web Development" />
+    <meta name="author" content="Wajid Daud Tamboli" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#00abf0" />
+
+    <!-- Open Graph meta tags for social media optimization -->
+    <meta property="og:title" content="Wajid Tamboli | Professional Portfolio" />
+    <meta property="og:description"
+        content="Full Stack Developer & Frontend Developer  with expertise in web development and technical solutions." />
+    <meta property="og:image" content="~/images/Wajid_Coding.jpg" />
+    <meta property="og:url" content="https://techworld-wajid.onrender.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wajid Tamboli | Professional Portfolio" />
+    <meta name="twitter:description" content="Full Stack Developer & Frontend Developer " />
+    <meta name="twitter:image" content="~/images/Wajid_Coding.jpg" />
+
+    <!-- Favicon for the website -->
+    <link rel="shortcut icon" href="~/images/Wajid_Coding.jpg" type="image/x-icon" />
+    <link rel="icon" href="~/images/wajidicon.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="~/images/wajidicon.jpg" />
+
+    <!-- External CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- BoxIcons with local fallback -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/boxicons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/site.css?v=5.0" asp-append-version="true" />
+
+    <!-- External JavaScript Libraries -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+    <!-- Background Pattern -->
+    <div class="bg-pattern"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo">TechWorld</a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+
+    </header>
+
+    <!-- Main Content -->
+    @RenderBody()
+
+    <!-- Global Fixed Footer (updated) -->
+    <footer
+        style="width:100%;max-width:100vw;padding:12px 0;text-align:center;background:rgba(0,0,0,0.438);color:var(--text-color);font-size:clamp(1rem,2.5vw,1.2rem);font-weight:600;box-shadow:0px -2px 12px rgba(0,0,0,0.3);z-index:9999;position:fixed;bottom:0;left:0;right:0;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;gap:15px;">
+        <div style="position:absolute;left:15px">
+            <a href="#home"
+                style="display:inline-block;width:30px;height:30px;background:var(--main-color);border-radius:50%;color:var(--bg-color);text-decoration:none;font-size:1rem;line-height:30px;transition:all .3s ease;"><i
+                    class="bx bx-up-arrow-alt"></i></a>
+        </div>
+        <span>Developer - <strong style="color:var(--hover-color);font-weight:800;letter-spacing:.5px;">Wajid Daud
+                Tamboli</strong></span>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="~/js/site.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <!-- Elfsight AI Chatbot | Added globally -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-6614ceb4-fee4-43c5-8fb5-7e8d6cc3b8aa" data-elfsight-app-lazy></div>
+</body>
+
+</html>

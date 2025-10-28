@@ -1,0 +1,30 @@
+/* Local BoxIcons CSS - Fallback for slow networks */
+@font-face {
+  font-family: 'boxicons';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://unpkg.com/boxicons@2.1.4/fonts/boxicons.woff2') format('woff2'),
+       url('https://unpkg.com/boxicons@2.1.4/fonts/boxicons.woff') format('woff');
+}
+
+.bx {
+  font-family: 'boxicons' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  display: inline-block;
+  text-transform: none;
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Common BoxIcon classes */
+.bx-menu:before { content: "\ea85"; }
+.bxl-github:before { content: "\ed2f"; }
+.bxl-linkedin:before { content: "\ed33"; }
+.bx-mail-send:before { content: "\ea87"; }
+.bx-phone:before { content: "\ea84"; }
+.bx-up-arrow-alt:before { content: "\ea99"; }

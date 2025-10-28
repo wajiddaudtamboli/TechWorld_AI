@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# .NET Backend (excluded from static deployment)
+PortfolioApp/bin/
+PortfolioApp/obj/
+*.db
+*.db-shm
+*.db-wal
+
+# Build outputs
+dist/node_modules/
+
+# IDE
+.vs/
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+*.bak
+*.swp
+
+# Old documentation
+CLEAR-BROWSER-CACHE.ps1
+START_HERE.txt
+COMPLETE_FIX_SUMMARY.md

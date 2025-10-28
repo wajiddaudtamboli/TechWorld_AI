@@ -1,0 +1,58 @@
+# .NET Backend Files (No longer needed for static hosting)
+PortfolioApp/Controllers/
+PortfolioApp/Models/
+PortfolioApp/Data/
+PortfolioApp/Views/
+PortfolioApp/*.csproj
+PortfolioApp/*.cs
+PortfolioApp/obj/
+PortfolioApp/bin/
+*.db
+*.db-shm
+*.db-wal
+
+# .NET Solution Files
+*.sln
+
+# Build artifacts
+build/
+dist/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vs/
+.vscode/settings.json
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Documentation (old deployment guides)
+DEPLOYMENT.md
+render.yaml
+PortfolioApp/DEPLOYMENT.md
+PortfolioApp/render.yaml
+
+# Build scripts (old ASP.NET setup)
+PortfolioApp/setup.ps1
+PortfolioApp/setup.sh
+build.sh
+
+# Development files
+START_HERE.txt
+COMPLETE_FIX_SUMMARY.md
+CLEAR-BROWSER-CACHE.ps1

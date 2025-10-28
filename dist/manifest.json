@@ -1,0 +1,32 @@
+{
+  "name": "Wajid Tamboli - Portfolio",
+  "short_name": "TechWorld",
+  "description": "Professional portfolio of Wajid Tamboli - Full Stack Developer & UI/UX Designer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081b29",
+  "theme_color": "#ff8c00",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./PortfolioApp/wwwroot/images/Wajid_Coding.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./PortfolioApp/wwwroot/images/Wajid_Coding.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "technology", "developer"],
+  "screenshots": [
+    {
+      "src": "./PortfolioApp/wwwroot/images/Wajid_Coding.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    }
+  ]
+}

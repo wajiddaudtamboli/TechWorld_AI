@@ -227,6 +227,15 @@ body {
   width: 100%;
 }
 
+/* Hide any menu icon elements */
+#menu-icon,
+.menu-icon,
+.bx-menu {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 /* Hide navbar on mobile devices */
 @media (max-width: 768px) {
   .navbar {

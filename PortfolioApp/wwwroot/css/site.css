@@ -333,7 +333,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
   margin-top: 25px;
 }
@@ -369,7 +369,7 @@ section {
 .social-icons {
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 12px !important;
   margin-left: 0 !important;
 }
 
@@ -1194,7 +1194,7 @@ section {
 
   /* Button and social icons wrapper responsive */
   .btn-social-wrapper {
-    gap: 10px;
+    gap: 12px;
     margin-top: 1.5rem;
   }
 
@@ -1205,7 +1205,7 @@ section {
   }
 
   .social-icons {
-    gap: 8px;
+    gap: 10px;
     margin-left: 0 !important;
   }
 

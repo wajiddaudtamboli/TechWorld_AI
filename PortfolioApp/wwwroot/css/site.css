@@ -1094,6 +1094,16 @@ section {
     gap: 2rem;
   }
 
+  .about-content {
+    text-align: center !important;
+  }
+
+  .about-content h2,
+  .about-content h3,
+  .about-content p {
+    text-align: center !important;
+  }
+
   .about-img img {
     width: 50vw;
     max-width: 350px;
@@ -1251,6 +1261,16 @@ section {
     flex-direction: column-reverse;
     text-align: center;
     gap: 1.5rem;
+  }
+
+  .about-content {
+    text-align: center !important;
+  }
+
+  .about-content h2,
+  .about-content h3,
+  .about-content p {
+    text-align: center !important;
   }
 
   .about-img img {

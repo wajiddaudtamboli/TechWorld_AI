@@ -264,6 +264,13 @@ section {
   margin: 0 auto;
 }
 
+/* Desktop mode: Increase top padding for better visual separation */
+@media (min-width: 769px) {
+  .home {
+    padding-top: 8rem;
+  }
+}
+
 /* Other sections should have consistent but smaller spacing */
 .about, .skills, .experience, .projects, .achievements, .contact {
   min-height: auto;

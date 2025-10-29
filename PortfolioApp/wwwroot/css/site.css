@@ -227,6 +227,13 @@ body {
   width: 100%;
 }
 
+/* Hide navbar on mobile devices */
+@media (max-width: 768px) {
+  .navbar {
+    display: none !important;
+  }
+}
+
 /* Home Section */
 section {
   min-height: auto;

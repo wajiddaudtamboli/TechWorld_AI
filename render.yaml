@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: techworld-ai
+    runtime: docker
+    repo: https://github.com/wajiddaudtamboli/TechWorld-AI
+    rootDir: PortfolioApp
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        value: Data Source=portfolio.db

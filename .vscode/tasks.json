@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run PortfolioApp",
+			"type": "shell",
+			"command": "dotnet run --project PortfolioApp/PortfolioApp.csproj",
+			"isBackground": false,
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Restore and Run",
+			"type": "shell",
+			"command": "cd PortfolioApp && dotnet restore && dotnet run",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "DotNetRun",
+			"type": "shell",
+			"command": "dotnet run --project PortfolioApp/PortfolioApp.csproj",
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}

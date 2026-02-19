@@ -1,0 +1,15 @@
+@{
+  ViewData["Title"] = "Error";
+}
+
+<section class="home" id="home" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+  <div class="home-content" style="text-align: center;">
+    <h1>Oops!</h1>
+    <h3>Something went <span style="color: var(--main-color);">wrong</span></h3>
+    <p>
+      We encountered an error while processing your request.
+      Please try again or contact us if the problem persists.
+    </p>
+    <a href="@Url.Action("Index", "Home")" class="btn-box">Go Home</a>
+  </div>
+</section>

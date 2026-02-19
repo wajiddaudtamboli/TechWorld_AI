@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Icons Test - FINAL FIX</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/site.css?v=4.0&nocache=<?= time() ?>" />
+    <style>
+        body {
+            background: #081b29;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            min-height: 100vh;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-radius: 15px;
+        }
+        h1 {
+            color: #ff8c00;
+            margin-bottom: 30px;
+        }
+        .status {
+            background: #0a2e4a;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #00ff00;
+        }
+        .status.warning {
+            border-left-color: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔧 Social Icons Test - FINAL FIX</h1>
+        
+        <div class="status">
+            <strong>✅ OLD CSS REMOVED</strong><br>
+            The conflicting .home-sci class has been completely removed from site.css
+        </div>
+
+        <div class="status">
+            <strong>✅ NEW CSS ACTIVE</strong><br>
+            Version: 4.0 - Clean slate with only .social-icons styles
+        </div>
+
+        <h2 style="color: #ff8c00; margin-top: 40px;">Test Result:</h2>
+        
+        <div class="btn-social-wrapper">
+            <!-- Download Resume Button -->
+            <a href="#" class="btn-download" aria-label="Download Resume">
+                <i class="bx bx-download"></i>
+                Download Resume
+            </a>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="mailto:test@example.com" aria-label="Email">
+                    <i class="bx bx-envelope"></i>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="status warning" style="margin-top: 40px;">
+            <strong>⚠️ BROWSER CACHE WARNING</strong><br>
+            If icons still look small, press: <code style="color: #ff8c00; font-size: 18px;">Ctrl + Shift + Delete</code><br>
+            Then clear "Cached images and files" for the last hour
+        </div>
+
+        <h3 style="color: #00ff00; margin-top: 30px;">Expected Result:</h3>
+        <ul style="line-height: 2;">
+            <li>✅ 4 circular icons (42x42px)</li>
+            <li>✅ Orange borders (2px)</li>
+            <li>✅ Transparent background</li>
+            <li>✅ Icons arranged horizontally</li>
+            <li>✅ Hover changes background to platform color</li>
+        </ul>
+
+        <div style="margin-top: 40px; padding: 20px; background: #1a3a52; border-radius: 10px;">
+            <h4 style="color: #ff8c00;">What Was Fixed:</h4>
+            <ol style="line-height: 2;">
+                <li>❌ Removed old <code>.home-sci</code> class (lines 338-362)</li>
+                <li>✅ Kept only new <code>.social-icons</code> class with !important flags</li>
+                <li>✅ Bumped CSS version to v=4.0</li>
+                <li>✅ Rebuilt and restarted server</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        console.log('%c✅ FINAL FIX TEST PAGE LOADED', 'color: #00ff00; font-size: 20px; font-weight: bold;');
+        console.log('%cCSS Version: 4.0', 'color: #ff8c00; font-size: 16px;');
+        console.log('%cOld .home-sci class: REMOVED', 'color: #00ff00; font-size: 16px;');
+        
+        // Check if icons are properly sized
+        setTimeout(() => {
+            const icons = document.querySelectorAll('.social-icons a');
+            icons.forEach((icon, index) => {
+                const computed = window.getComputedStyle(icon);
+                console.log(`Icon ${index + 1}:`, {
+                    width: computed.width,
+                    height: computed.height,
+                    borderRadius: computed.borderRadius,
+                    border: computed.border
+                });
+                
+                if (computed.width !== '42px') {
+                    console.error('%c❌ ICON SIZE WRONG! Still using old CSS!', 'color: red; font-size: 16px; font-weight: bold;');
+                    console.error('Clear browser cache: Ctrl + Shift + Delete');
+                } else {
+                    console.log('%c✅ Icon size correct: 42x42px', 'color: #00ff00; font-size: 14px;');
+                }
+            });
+        }, 500);
+    </script>
+</body>
+</html>

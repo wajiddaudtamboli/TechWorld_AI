@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg-color: #f7f4ef; /* Soft warm light base */
   --second-bg-color: #ffffff; /* Clean surface */
   --text-color: #1d1d1d; /* Primary dark text */
@@ -94,7 +94,7 @@
 }
 
 /* ============================================
-   EXTRACTED INLINE STYLES → CSS CLASSES
+   EXTRACTED INLINE STYLES â†’ CSS CLASSES
    ============================================ */
 
 /* Profile image float animation */
@@ -239,6 +239,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
@@ -438,7 +439,7 @@ body {
   overflow: hidden;
 }
 
-/* Animated gradient orbs — optimized for performance */
+/* Animated gradient orbs â€” optimized for performance */
 .bg-pattern::before,
 .bg-pattern::after {
   content: '';
@@ -527,7 +528,7 @@ body {
   }
 }
 
-/* Content overlay for better text visibility — lightweight */
+/* Content overlay for better text visibility â€” lightweight */
 body::before {
   content: '';
   position: fixed;
@@ -1508,7 +1509,7 @@ section > * {
 }
 
 .timeline-content ul li::before {
-  content: "▹";
+  content: "â–¹";
   position: absolute;
   left: -20px;
   color: var(--main-color);
@@ -2508,3 +2509,4 @@ div[class*="elfsight-app"] iframe,
     transform: none !important;
   }
 }
+

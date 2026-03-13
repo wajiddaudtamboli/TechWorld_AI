@@ -11,7 +11,7 @@
     <meta name="description" content="Professional portfolio of Wajid Tamboli - Full Stack Developer, Frontend Developer, UI/UX Designer with expertise in MERN Stack, React, Angular, Node.js, Python, Java, and Cloud Technologies.">
     <meta name="keywords" content="Wajid Tamboli, Full Stack Developer, Frontend Developer, UI/UX Designer, React Developer, MERN Stack, Angular Developer, Technical Support Engineer, Web Development, Portfolio, Solapur Maharashtra">
     <meta name="author" content="Wajid Daud Tamboli">
-    <meta name="robots" content=", follow">
+    <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -36,7 +36,6 @@
     
     <!-- Manifest for PWA -->
     <link rel="manifest" href="./manifest.json">
-    <meta name="theme-color" content="#081b29">
     
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -177,7 +176,7 @@
                  loading="eager"
                  width="350"
                  height="350"
-                 style="animation: floatImage 3s ease-in-out infinite" />
+                 class="profile-float-anim" />
         </div>
     </section>
 
@@ -409,18 +408,18 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" style="padding: 60px 20px; background-color: #1b1b1b;">
-        <h2 style="text-align: center; color: #fff; font-size: 2.5rem; margin-bottom: 20px;">
-            My <span style="color: #ff004f;">Projects</span>
+    <section id="projects">
+        <h2 class="projects-heading">
+            My <span class="accent-red">Projects</span>
         </h2>
-        <p style="text-align: center; color: #bbb; font-size: 1.1rem; margin-bottom: 40px;">
+        <p class="projects-subtitle">
             Showcasing innovative solutions across AI, Web Development, UI/UX Design, and Data Analytics
         </p>
 
         <div class="project-cards-grid">
             <!-- Project 1: CareerPilot AI (Patent) -->
             <div class="project-card">
-                <div style="position: absolute; top: 10px; right: 10px; background: #ff004f; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; z-index: 10;">
+                <div class="project-badge">
                     🏆 Patent
                 </div>
                 <a href="https://careerpilot-ai-umber.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-img-link" aria-label="View Project">
@@ -429,7 +428,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">CareerPilot AI - AI Career Coach</h4>
@@ -441,7 +440,7 @@
 
             <!-- Project 2: RakshaMitra AI (Patent) -->
             <div class="project-card">
-                <div style="position: absolute; top: 10px; right: 10px; background: #ff004f; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; z-index: 10;">
+                <div class="project-badge">
                     🏆 Patent
                 </div>
                 <a href="https://raksha-mitraai.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-img-link" aria-label="View Project">
@@ -450,7 +449,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">RakshaMitra AI - Disaster Relief System</h4>
@@ -467,7 +466,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">CADD Solutions - IT Educational Hub</h4>
@@ -484,7 +483,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Saheli Saree Center App</h4>
@@ -501,7 +500,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">NKOCET Reunion - Alumni Engagement</h4>
@@ -518,7 +517,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">AI Career Compass J&K</h4>
@@ -535,7 +534,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Imran Usman Shaikh Portfolio</h4>
@@ -546,7 +545,7 @@
 
             <!-- Project 8: ORCHATHON 2K25 -->
             <div class="project-card">
-                <div style="position: absolute; top: 10px; right: 10px; background: #ffd700; color: #081b29; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; z-index: 10;">
+                <div class="project-badge--event">
                     🎯 Event
                 </div>
                 <a href="https://csesaorchathon.in/" target="_blank" rel="noopener noreferrer" class="project-img-link" aria-label="View Project">
@@ -555,7 +554,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">ORCHATHON 2K25</h4>
@@ -575,7 +574,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Sajid Daud Tamboli Portfolio</h4>
@@ -592,7 +591,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">AgriConnect AI</h4>
@@ -609,7 +608,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">CareerPilot - Resume Generator</h4>
@@ -626,7 +625,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Carbon Guard AI</h4>
@@ -643,7 +642,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">E-Commerce Platform</h4>
@@ -660,7 +659,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">TechWorld Portfolio (This Website)</h4>
@@ -677,7 +676,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Weather Forecasting App</h4>
@@ -687,29 +686,29 @@
             </div>
 
             <!-- Project 16: GitHub Repositories Card -->
-            <div class="project-card" style="background: linear-gradient(135deg, #24292e 0%, #1a1e22 100%);">
+            <div class="project-card project-card--github">
                 <img src="https://editor.analyticsvidhya.com/uploads/765900ba9-article-200807-github-gitguardbody-text.jpg"
                      alt="GitHub Repositories" 
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 <div class="project-card-body">
                     <h4 class="project-card-title">
-                        <i class="bx bxl-github" style="font-size: 1.5rem; vertical-align: middle;"></i>
+                        <i class="bx bxl-github github-icon"></i>
                         GitHub Repositories
                     </h4>
-                    <p class="project-desc">Explore all my <span style="background: #ffd700; color: #081b29; padding: 2px 8px; border-radius: 8px; font-weight: bold;">25+ projects</span> including full-stack apps, AI/ML models, APIs, and open-source contributions.</p>
+                    <p class="project-desc">Explore all my <span class="highlight-count">25+ projects</span> including full-stack apps, AI/ML models, APIs, and open-source contributions.</p>
                     <p class="project-meta"><strong class="includes-label">Includes:</strong> Web Apps, Mobile Apps, Data Science, DevOps, and more</p>
-                    <a href="https://github.com/wajiddaudtamboli" target="_blank" rel="noopener noreferrer" class="project-link project-link--wide" aria-label="View All GitHub Projects" style="background: #238636;">
-                        <i class="bx bxl-github" style="font-size:1.4rem;"></i> View All Projects
+                    <a href="https://github.com/wajiddaudtamboli" target="_blank" rel="noopener noreferrer" class="project-link project-link--wide project-link--github" aria-label="View All GitHub Projects">
+                        <i class="bx bxl-github github-btn-icon"></i> View All Projects
                     </a>
                 </div>
             </div>
         </div>
 
         <!-- UI/UX Case Studies Section -->
-        <h3 style="color: #fff; font-size: 1.8rem; margin: 60px 0 25px; padding-left: 10px; border-left: 4px solid #ff004f; text-align: center;">
+        <h3 class="projects-subheading">
             🎨 UI/UX Case Studies
         </h3>
         <div class="project-cards-grid">
@@ -721,7 +720,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Orchidians Shopping Cart</h4>
@@ -738,7 +737,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Medical Appointment App</h4>
@@ -755,7 +754,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Kisan-Groceries Website</h4>
@@ -772,7 +771,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Travel Explorer Website</h4>
@@ -783,7 +782,7 @@
         </div>
 
         <!-- Software Testing Projects Section -->
-        <h3 style="color: #fff; font-size: 1.8rem; margin: 60px 0 25px; padding-left: 10px; border-left: 4px solid #ff004f; text-align: center;">
+        <h3 class="projects-subheading">
             🧪 Software Testing Projects
         </h3>
         <div class="project-cards-grid">
@@ -795,7 +794,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Software Testing Repository</h4>
@@ -816,7 +815,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">Software Testing Project – app.vwo.com</h4>
@@ -837,7 +836,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">API Automation – Rest Assured Framework</h4>
@@ -853,10 +852,10 @@
         </div>
 
         <!-- Data Analyst Projects Section -->
-        <h3 style="color: #fff; font-size: 1.8rem; margin: 60px 0 25px; padding-left: 10px; border-left: 4px solid #ff004f; text-align: center;">
+        <h3 class="projects-subheading">
             📊 Data Analyst Projects
         </h3>
-        <p style="color: #ccc; text-align: center; margin: 0 auto 40px; max-width: 800px; font-size: 1.1rem; line-height: 1.6;">
+        <p class="projects-subtitle--data">
             You can see my Projects related to Data Analyst:
         </p>
         <div class="project-cards-grid">
@@ -868,7 +867,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">1️⃣ Insurance Performance Dashboard</h4>
@@ -893,7 +892,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">2️⃣ Telecom Growth Analysis Report</h4>
@@ -918,7 +917,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </a>
                 <div class="project-card-body">
                     <h4 class="project-card-title">3️⃣ Sales Performance 360 Dashboard</h4>
@@ -943,7 +942,7 @@
                      loading="lazy"
                      width="350"
                      height="220"
-                     style="width:100%; height:220px; object-fit:cover; display:block;" />
+                     />
                 </div>
                 <div class="project-card-body">
                     <h4 class="project-card-title">4️⃣ Consumer Insights Dashboard</h4>
@@ -1000,9 +999,8 @@
                 <input type="text" name="name" placeholder="🔹 Full Name" required />
                 <input type="email" name="email" placeholder="📧 Email Address" required />
             </div>
-            <div class="input-box" style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap">
-                <select name="subject" class="subject-select" required
-                    style="flex: 1; min-width: 200px; padding: 15px; border: 2px solid #0ef; background: transparent; color: var(--text-color); font-size: 16px; border-radius: 8px;">
+            <div class="input-box input-box--flex">
+                <select name="subject" class="subject-select" required title="Select inquiry type" aria-label="Select inquiry type">
                     <option value="" disabled selected>📌 Select Inquiry Type</option>
                     <option value="Full Stack Development">🌐 Full Stack Development</option>
                     <option value="Frontend Development">💻 Frontend Development</option>
@@ -1017,8 +1015,7 @@
                     <option value="Collaboration Proposal">🤝 Project Collaboration</option>
                     <option value="General Consultation">💡 Professional Advice</option>
                 </select>
-                <input type="tel" name="phone" placeholder="📞 Mobile Number" required
-                    style="flex: 1; min-width: 200px; padding: 15px; border: 2px solid #0ef; background: transparent; color: var(--text-color); font-size: 16px; border-radius: 8px;" />
+                <input type="tel" name="phone" class="contact-phone-input" placeholder="📞 Mobile Number" required />
             </div>
             <textarea name="message" placeholder="💬 Please include project details, timeline, and budget if applicable"
                 required></textarea>
@@ -1059,15 +1056,13 @@
     </section>
 
     <!-- Footer -->
-    <footer style="width:100%;max-width:100vw;padding:12px 0;text-align:center;background:rgba(0,0,0,0.438);color:var(--text-color);font-size:clamp(1rem,2.5vw,1.2rem);font-weight:600;box-shadow:0px -2px 12px rgba(0,0,0,0.3);z-index:9999;position:fixed;bottom:0;left:0;right:0;backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;gap:15px;border-top:2px solid var(--hover-color);">
-        <div style="position:absolute;left:15px">
-            <a href="#home"
-                style="display:inline-block;width:30px;height:30px;background:var(--main-color);border-radius:50%;color:var(--bg-color);text-decoration:none;font-size:1rem;line-height:30px;transition:all .3s ease;"
-                aria-label="Back to top">
+    <footer class="site-footer">
+        <div class="footer-back-top">
+            <a href="#home" aria-label="Back to top">
                 <i class="bx bx-up-arrow-alt"></i>
             </a>
         </div>
-        <span>Developer - <strong style="color:var(--hover-color);font-weight:800;letter-spacing:.5px;">Wajid Daud Tamboli</strong></span>
+        <span>Developer - <strong class="footer-name">Wajid Daud Tamboli</strong></span>
     </footer>
 
     <!-- JavaScript Libraries -->

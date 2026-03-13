@@ -3,27 +3,72 @@
 
 // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-    // Scroll Reveal Animation
-    if (typeof ScrollReveal !== 'undefined') {
-        ScrollReveal({
-            reset: true,
-            distance: "80px",
-            duration: 2000,
-            delay: 200,
-        });
+    // Scroll Reveal Animation — medium speed (not too fast, not too slow)
+    function initScrollReveal() {
+        if (typeof ScrollReveal !== 'undefined') {
+            ScrollReveal({
+                reset: false,       // Don't re-animate on every scroll (major perf fix)
+                distance: "30px",   // Subtle movement — feels polished
+                duration: 800,      // Medium speed (0.8s)
+                delay: 80,          // Shorter initial delay
+                easing: 'ease-out',
+                mobile: true,
+                useDelay: 'onload', // Only delay on first load, not on scroll
+            });
 
-        ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-        ScrollReveal().reveal(
-            ".home-img, .skills-container, .projects-container, .achievements-container, .contact form",
-            { origin: "bottom" }
-        );
-        ScrollReveal().reveal(".home-content h1, .about-img", {
-            origin: "left",
-        });
-        ScrollReveal().reveal(".home-content p, .about-content", {
-            origin: "right",
+            ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+            ScrollReveal().reveal(
+                ".home-img, .skills-container, .projects-container, .achievements-container, .contact form",
+                { origin: "bottom" }
+            );
+            ScrollReveal().reveal(".home-content h1, .about-img", {
+                origin: "left",
+            });
+            ScrollReveal().reveal(".home-content p, .about-content", {
+                origin: "right",
+            });
+        }
+    }
+
+    // If ScrollReveal is already loaded (cached), init immediately; otherwise wait
+    if (typeof ScrollReveal !== 'undefined') {
+        initScrollReveal();
+    } else {
+        // Defer until script loads (since we use defer attribute now)
+        window.addEventListener('load', initScrollReveal);
+    }
+
+    // ========== IntersectionObserver for Project Cards (instant reveal on scroll) ==========
+    const projectCards = document.querySelectorAll('.project-card');
+    if (projectCards.length > 0) {
+        const cardObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    cardObserver.unobserve(entry.target); // Stop observing once shown (perf)
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' }); // Trigger earlier
+
+        projectCards.forEach(function (card) {
+            cardObserver.observe(card);
         });
     }
+
+    // ========== STEP 1: Image Fallback for Project Cards ==========
+    const projectImages = document.querySelectorAll('.project-card img');
+    const fallbackSrc = 'https://placehold.co/350x220/0f172a/ff8c00?text=Project+Image';
+    projectImages.forEach(function (img) {
+        img.addEventListener('error', function () {
+            if (this.src !== fallbackSrc) {
+                this.src = fallbackSrc;
+            }
+        });
+        // Check if image is already broken (cached state)
+        if (img.complete && img.naturalHeight === 0) {
+            img.src = fallbackSrc;
+        }
+    });
 
     // Contact Form Submission
     const contactForm = document.getElementById("contactForm");

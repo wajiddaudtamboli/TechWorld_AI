@@ -757,6 +757,34 @@ body::before {
   /* Tighten gap between Hello intro and name in phone desktop mode */
   .home-content .hello-intro { margin-bottom: 0 !important; }
   .home-content h1 { margin-top: 0 !important; margin-bottom: 6px !important; }
+
+  /* Timeline accordion for phone desktop mode */
+  .timeline-chevron {
+    display: inline-block;
+    font-size: 0.75em;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+    margin-left: 6px;
+    line-height: 1;
+  }
+  .timeline-content h2.timeline-toggle {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .timeline-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+  .timeline-content.expanded .timeline-details {
+    max-height: 600px;
+  }
+  .timeline-content.expanded .timeline-chevron {
+    transform: rotate(180deg);
+  }
 }
 
 /* Home Section */
@@ -1515,6 +1543,11 @@ section > * {
   position: absolute;
   left: -20px;
   color: var(--main-color);
+}
+
+/* Hide chevron on desktop; shown only in mobile media queries */
+.timeline-chevron {
+  display: none;
 }
 
 /* Projects Section */
@@ -2283,6 +2316,34 @@ section > * {
 
   .right {
     left: 0%;
+  }
+
+  /* Timeline accordion for mobile */
+  .timeline-chevron {
+    display: inline-block;
+    font-size: 0.75em;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+    margin-left: 6px;
+    line-height: 1;
+  }
+  .timeline-content h2.timeline-toggle {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .timeline-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+  .timeline-content.expanded .timeline-details {
+    max-height: 600px;
+  }
+  .timeline-content.expanded .timeline-chevron {
+    transform: rotate(180deg);
   }
 
   .contact form .input-box input {

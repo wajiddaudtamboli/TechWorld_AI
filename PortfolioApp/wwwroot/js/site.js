@@ -259,3 +259,32 @@ document.addEventListener("DOMContentLoaded", function () {
 const style = document.createElement('style');
 style.innerHTML = 'body.no-scroll{overflow:hidden;}';
 document.head.appendChild(style);
+
+// ========== Timeline Accordion for Phone & Phone Desktop Mode ==========
+(function () {
+    function isMobileOrPhoneDesktop() {
+        var w = window.innerWidth;
+        var isCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+        return w <= 768 || (isCoarsePointer && w >= 769);
+    }
+
+    function initTimelineAccordion() {
+        if (!isMobileOrPhoneDesktop()) return;
+        document.querySelectorAll('.timeline-content h2.timeline-toggle').forEach(function (h2) {
+            h2.addEventListener('click', function () {
+                var content = this.closest('.timeline-content');
+                if (content) {
+                    content.classList.toggle('expanded');
+                    var expanded = content.classList.contains('expanded');
+                    this.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                }
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initTimelineAccordion);
+    } else {
+        initTimelineAccordion();
+    }
+})();

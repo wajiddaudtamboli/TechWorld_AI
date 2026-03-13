@@ -276,6 +276,11 @@
   letter-spacing: 0.5px;
 }
 
+/* Invert icon to white (e.g. Express.js dark logo on dark background) */
+.icon-invert-white {
+  filter: brightness(0) invert(1);
+}
+
 /* New Project Card Layout Utilities (refactored from inline styles) */
 .project-cards-grid {
   display: grid;

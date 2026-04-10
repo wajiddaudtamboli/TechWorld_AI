@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Test</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/site.css?v=2.0" />
+    <style>
+        body {
+            background: #1a1a1a;
+            color: white;
+            padding: 50px;
+            font-family: Arial;
+        }
+        .test-container {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #ff8c00;
+        }
+        .icon-row {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            align-items: center;
+        }
+        .icon-test {
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>✅ Icon Loading Test</h1>
+        
+        <h2>Raw BoxIcons (Direct)</h2>
+        <div class="icon-row">
+            <i class='bx bxl-github icon-test' style='color: white;'></i>
+            <i class='bx bxl-linkedin icon-test' style='color: #0077b5;'></i>
+            <i class='bx bx-envelope icon-test' style='color: #ea4335;'></i>
+            <i class='bx bxl-whatsapp icon-test' style='color: #25d366;'></i>
+        </div>
+
+        <h2>With Button and Social Icons CSS Classes</h2>
+        <div class="btn-social-wrapper">
+            <a href="#" class="btn-download">
+                <i class="bx bx-download"></i>
+                Download Resume
+            </a>
+            
+            <div class="social-icons">
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                <a href="#"><i class="bx bx-envelope"></i></a>
+                <a href="#"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <h2>Debugging Info</h2>
+        <p>CSS File: <a href="/css/site.css?v=2.0" target="_blank" style="color: #ff8c00;">View CSS</a></p>
+        <p>BoxIcons CDN: <a href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" target="_blank" style="color: #ff8c00;">View BoxIcons</a></p>
+        
+        <hr style="margin: 30px 0; border-color: #444;">
+        
+        <p><strong>If you see social media icons above, the fix is working!</strong></p>
+        <p><strong>If you see squares or checkmarks, refresh with Ctrl+F5</strong></p>
+    </div>
+</body>
+</html>

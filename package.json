@@ -1,0 +1,29 @@
+{
+  "name": "techworld-portfolio",
+  "version": "2.0.0",
+  "description": "Static portfolio website - Vercel optimized",
+  "author": "Wajid Daud Tamboli",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run copy-files",
+    "copy-files": "node build-static.js",
+    "dev": "serve . -l 3000",
+    "start": "serve dist -l 3000",
+    "preview": "npm run build && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wajiddaudtamboli/TechWorld_AI.git"
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack",
+    "developer",
+    "ui-ux",
+    "vercel",
+    "static-site"
+  ],
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

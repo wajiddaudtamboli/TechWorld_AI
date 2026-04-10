@@ -2523,6 +2523,200 @@ section > * {
   }
 }
 
+/* Timeline responsive hardening */
+.timeline {
+  width: min(92%, 1100px);
+  margin: clamp(24px, 4vw, 50px) auto 0;
+}
+
+.timeline-container {
+  padding: 14px 34px;
+}
+
+.timeline-content {
+  padding: clamp(16px, 2.2vw, 24px);
+}
+
+.timeline-content h2.timeline-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: clamp(1.15rem, 1.6vw, 1.65rem);
+  line-height: 1.25;
+}
+
+.timeline-company {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+}
+
+.timeline-company-name {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+}
+
+.timeline-details {
+  line-height: 1.7;
+}
+
+@media (max-width: 1023px) {
+  .timeline {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0.25rem;
+  }
+
+  .timeline::after {
+    left: 20px;
+    margin-left: 0;
+  }
+
+  .timeline-container,
+  .timeline-container.left,
+  .timeline-container.right {
+    width: 100%;
+    left: 0;
+    padding: 0 0 1rem 50px;
+  }
+
+  .timeline-container::after,
+  .left::after,
+  .right::after {
+    left: 8px;
+    right: auto;
+    top: 18px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .timeline-container::before,
+  .left::before,
+  .right::before {
+    left: 30px;
+    right: auto;
+    top: 24px;
+    border-width: 8px 8px 8px 0;
+    border-color: transparent var(--main-color) transparent transparent;
+  }
+
+  .timeline-content {
+    padding: 14px 14px 14px 16px;
+  }
+
+  .timeline-content h2.timeline-toggle {
+    align-items: flex-start;
+    gap: 10px;
+    font-size: clamp(1rem, 2.8vw, 1.2rem);
+  }
+
+  .timeline-company {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .timeline-company-logo {
+    width: 78px;
+    height: 46px;
+    padding: 4px;
+  }
+
+  .timeline-company-logo-wide {
+    width: 92px;
+  }
+
+  .timeline-company-name {
+    line-height: 1.4;
+  }
+
+  .timeline-chevron {
+    flex: 0 0 auto;
+    margin-top: 4px;
+    margin-left: 6px;
+  }
+
+  .timeline-content ul {
+    padding-left: 18px;
+  }
+
+  .timeline-content ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    padding: 0;
+  }
+
+  .timeline::after {
+    left: 16px;
+  }
+
+  .timeline-container,
+  .timeline-container.left,
+  .timeline-container.right {
+    padding-left: 42px;
+  }
+
+  .timeline-container::after,
+  .left::after,
+  .right::after {
+    left: 4px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .timeline-container::before,
+  .left::before,
+  .right::before {
+    left: 24px;
+  }
+
+  .timeline-content {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .timeline-content h2.timeline-toggle {
+    font-size: 1.04rem;
+  }
+
+  .timeline-company-logo {
+    width: 70px;
+    height: 42px;
+  }
+
+  .timeline-company-logo-wide {
+    width: 84px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .timeline {
+    width: min(90%, 1140px);
+  }
+
+  .timeline::after {
+    left: 50%;
+  }
+
+  .timeline-container {
+    width: 50%;
+    padding: 16px 40px;
+  }
+
+  .timeline-content {
+    min-height: 100%;
+  }
+}
+
 /* Responsive Design Adjustments */
 
 /* Phone-only Social Icons Centering */

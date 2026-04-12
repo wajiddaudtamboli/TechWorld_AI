@@ -238,18 +238,16 @@ Edit CSS variables in `PortfolioApp/wwwroot/css/site.css`:
 2. **RakshaMitra AI** (Patent) - Disaster relief system
 3. **CADD Solutions** - IT educational hub
 4. **Saheli Saree Center App** - E-commerce & POS system
-5. **NKOCET Reunion** - Alumni engagement platform
-6. **AI Career Compass J&K** - Career guidance for J&K students
-7. **Imran Usman Shaikh Portfolio** - Design engineer portfolio
-8. **ORCHATHON 2K25** - National hackathon (12-13 April 2025)
-9. **Sajid Daud Tamboli Portfolio** - Structural engineer portfolio
-10. **AgriConnect AI** - Crop disease detection platform
-11. **CareerPilot Resume Generator** - ATS-optimized resume builder
-12. **Carbon Guard AI** - Carbon footprint tracking
-13. **E-Commerce Platform** - 24 mock products showcase
-14. **TechWorld Portfolio** - This website
-15. **Weather Forecasting App** - Voice-enabled weather app
-16. **GitHub Repositories** - 25+ projects collection
+5. **AI Career Compass J&K** - Career guidance for J&K students
+6. **Imran Usman Shaikh Portfolio** - Design engineer portfolio
+7. **ORCHATHON 2K25** - National hackathon (12-13 April 2025)
+8. **Sajid Daud Tamboli Portfolio** - Structural engineer portfolio
+9. **CareerPilot Resume Generator** - ATS-optimized resume builder
+10. **Carbon Guard AI** - Carbon footprint tracking
+11. **E-Commerce Platform** - 24 mock products showcase
+12. **TechWorld Portfolio** - This website
+13. **Weather Forecasting App** - Voice-enabled weather app
+14. **GitHub Repositories** - 25+ projects collection
 
 ### 🎨 UI/UX Case Studies (4 Projects)
 
